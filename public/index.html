@@ -11,13 +11,13 @@
     <ul id="list"></ul>
 
     <!--ADD STUDENT-->
-    <input type="text" name="name" id="name" placeholder="" />
-    <input type="text" name="course" id="course" placeholder=""/>
+    <input type="text" name="name" id="name" placeholder="Enter your name.." />
+    <input type="text" name="course" id="course" placeholder="Enter your course.."/>
     <button onclick="addStudent()">SUBMIT</button>
 
 </body>
 <script>
-    const apiURL = `http://localhost:3000`
+    const apiURL = `http://localhost:8000`
 
     async function loadSIA101() {
     const res = await fetch(`${apiURL}/api/students`)
